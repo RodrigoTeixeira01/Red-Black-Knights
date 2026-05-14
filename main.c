@@ -83,12 +83,12 @@ void loop() {
 
 int main(int argc, char** argv) {
 	for (int i = 0; i < PLAYER_COUNT; i++) {
-		players[i].x = WINDOW_SIZE >> 1;
-		players[i].y = WINDOW_SIZE >> 1;
+		players[i].x = MAP_SIZE >> 1;
+		players[i].y = MAP_SIZE >> 1;
 		players[i].streakLength = 1;
 		players[i].leftToWalk = 1;
 		players[i].dir = '\0';
 	}
-	map[WINDOW_SIZE >> 1][WINDOW_SIZE >> 1] = 1;
+	map[MAP_SIZE >> 1][MAP_SIZE >> 1] = 1;
 	init(argc, argv, "Red and Black Knights", WINDOW_SIZE, WINDOW_SIZE);
 }
